@@ -78,6 +78,7 @@ func (b *Glusterfsd) Args() []string {
 	b.args = append(b.args, "-p", b.PidFile())
 	b.args = append(b.args, "-S", b.SocketFile())
 	b.args = append(b.args, "--brick-name", b.brickinfo.Path)
+	b.args = append(b.args, "--brick-port", 29003)
 	b.args = append(b.args, "-l", logFile)
 	b.args = append(b.args,
 		"--xlator-option",
