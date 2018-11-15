@@ -4,6 +4,7 @@ package api
 type BrickReq struct {
 	Type           string `json:"type"`
 	PeerID         string `json:"peerid"`
+	Port           string `json:"port"`
 	Path           string `json:"path"`
 	TpMetadataSize uint64 `json:"metadata-size,omitempty"`
 	TpSize         uint64 `json:"thinpool-size,omitempty"`

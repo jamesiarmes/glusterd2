@@ -38,6 +38,7 @@ type Brickinfo struct {
 	Hostname       string
 	PeerID         uuid.UUID
 	Path           string
+	Port           string
 	VolumeName     string
 	VolfileID      string
 	VolumeID       uuid.UUID
